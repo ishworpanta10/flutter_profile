@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomColor {
-  static const Color whiteColor = Colors.white;
+  static const whiteColor = Colors.white;
+  static const blackColor = Colors.black;
+  static const redColor = Colors.red;
+  static const purpleColor = Color(0xffFF00FD);
 }
