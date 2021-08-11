@@ -15,10 +15,11 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.menu),
-          ),
+          leading: GestureDetector(
+              onTap: () {
+                print("Opening Drawer");
+              },
+              child: CustomDrawerIcon()),
           title: const Text(
             "Profile",
             style: CustomTextStyle.headingTextStyle,
