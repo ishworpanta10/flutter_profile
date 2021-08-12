@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/route/custom_router.dart';
+
+import 'route/custom_router.dart';
 
 void main() {
   runApp(MyApp());

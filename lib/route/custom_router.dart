@@ -26,6 +26,11 @@ class CustomRouter {
           builder: (context) => const GridViewMenu(),
         );
 
+      case RouteConstants.apiPageRoute:
+        return MaterialPageRoute(
+          builder: (context) => const ApiDataScreen(),
+        );
+
       default:
         return MaterialPageRoute(
           builder: (context) => ErrorRouteScreen(),

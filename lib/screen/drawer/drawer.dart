@@ -41,6 +41,16 @@ class MyDrawer extends StatelessWidget {
                 );
               },
             ),
+            const Divider(),
+            ListTile(
+              title: const Text("App to fetch data from internet"),
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  RouteConstants.apiPageRoute,
+                );
+              },
+            ),
           ],
         ),
       ),
