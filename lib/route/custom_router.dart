@@ -9,7 +9,21 @@ class CustomRouter {
     switch (routeSettings.name) {
       case RouteConstants.defaultRoute:
         return MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => HomeScreen(),
+        );
+
+      case RouteConstants.webViewRoute:
+        final args = routeSettings.arguments as List<String>;
+        return MaterialPageRoute(
+          builder: (context) => WebViewPage(
+            url: args[0],
+            webTitle: args[1],
+          ),
+        );
+
+      case RouteConstants.gridViewRoute:
+        return MaterialPageRoute(
+          builder: (context) => const GridViewMenu(),
         );
 
       default:

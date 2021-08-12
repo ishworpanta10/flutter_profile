@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:profile_app/model/model.dart';
+import 'package:profile_app/screen/screens.dart';
 import 'package:profile_app/style/style.dart';
 
 import 'home_screen_widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  HomeScreen({Key? key}) : super(key: key);
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +17,24 @@ class HomeScreen extends StatelessWidget {
     final screenWidth = screenSize.width;
     return SafeArea(
       child: Scaffold(
+        key: _scaffoldKey,
         appBar: AppBar(
-          leading: GestureDetector(
-              onTap: () {
-                print("Opening Drawer");
-              },
-              child: CustomDrawerIcon()),
+          leading: InkWell(
+            onTap: () {
+              // print("Opening Drawer");
+              _scaffoldKey.currentState?.openDrawer();
+            },
+            child: CustomDrawerIcon(),
+          ),
           title: const Text(
             "Profile",
             style: CustomTextStyle.headingTextStyle,
           ),
           centerTitle: true,
           elevation: 0,
+        ),
+        drawer: const MyDrawer(
+          userModel: currentUser,
         ),
         body: SingleChildScrollView(
           child: Column(

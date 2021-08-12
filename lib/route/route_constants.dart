@@ -1,4 +1,5 @@
 class RouteConstants {
   static const String defaultRoute = "/";
-  static const String err = "wee";
+  static const String webViewRoute = "/webViewRoute";
+  static const String gridViewRoute = "/gridViewRoute";
 }

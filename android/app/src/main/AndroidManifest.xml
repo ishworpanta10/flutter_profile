@@ -19,7 +19,8 @@
         </intent>
     </queries>
    <application
-        android:label="profile_app"
+       android:usesCleartextTraffic="true"
+       android:label="profile_app"
         android:icon="@mipmap/ic_launcher">
 
 

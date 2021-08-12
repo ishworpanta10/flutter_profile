@@ -4,7 +4,8 @@ import 'package:profile_app/constants/constants.dart';
 class CustomDrawerIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      color: Colors.red,
       padding: const EdgeInsets.only(left: kPadding * 2),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
