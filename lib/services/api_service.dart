@@ -2,7 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:profile_app/model/model.dart';
+
+import '../model/model.dart';
 
 class ApiService {
   final url = "https://jsonplaceholder.typicode.com/users";

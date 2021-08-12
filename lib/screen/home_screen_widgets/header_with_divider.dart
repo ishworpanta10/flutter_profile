@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/constants/constants.dart';
-import 'package:profile_app/style/style.dart';
+
+import '../../constants/constants.dart';
+import '../../style/style.dart';
 
 class HeaderWithDivider extends StatelessWidget {
   const HeaderWithDivider({required this.headerText});

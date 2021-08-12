@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:profile_app/route/routes.dart';
-import 'package:profile_app/screen/screens.dart';
-import 'package:profile_app/widgets/widgets.dart';
+
+import '../screen/screens.dart';
+import '../widgets/widgets.dart';
+import 'routes.dart';
 
 class CustomRouter {
   static Route onGenerateRoute(RouteSettings routeSettings) {

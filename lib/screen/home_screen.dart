@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/model/model.dart';
-import 'package:profile_app/screen/screens.dart';
-import 'package:profile_app/style/style.dart';
 
+import '../model/model.dart';
+import '../style/style.dart';
 import 'home_screen_widgets/widgets.dart';
+import 'screens.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenHeight = screenSize.height;
-    final screenWidth = screenSize.width;
+    // final screenWidth = screenSize.width;
     return SafeArea(
       child: Scaffold(
         key: _scaffoldKey,

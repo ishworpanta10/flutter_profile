@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/assets/assets.dart';
-import 'package:profile_app/model/model.dart';
-import 'package:profile_app/route/routes.dart';
-import 'package:profile_app/widgets/circular_profile_image.dart';
+
+import '../../assets/assets.dart';
+import '../../model/model.dart';
+import '../../route/routes.dart';
+import '../../widgets/circular_profile_image.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key, required this.userModel}) : super(key: key);

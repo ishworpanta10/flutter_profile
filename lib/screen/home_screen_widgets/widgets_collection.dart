@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:profile_app/style/style.dart';
+
+import '../../style/style.dart';
 
 Text defaultText({required String text}) {
   return Text(

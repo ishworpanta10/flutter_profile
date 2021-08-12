@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/assets/assets.dart';
-import 'package:profile_app/constants/constants.dart';
-import 'package:profile_app/model/model.dart';
-import 'package:profile_app/services/services.dart';
 
+import '../../assets/assets.dart';
+import '../../constants/constants.dart';
+import '../../model/model.dart';
+import '../../services/services.dart';
 import 'widgets.dart';
 
 class BodySection extends StatelessWidget {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/constants/constants.dart';
+
+import '../../constants/constants.dart';
 
 class SocialIconRow extends StatelessWidget {
   const SocialIconRow({

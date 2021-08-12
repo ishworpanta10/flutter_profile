@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/constants/constants.dart';
-import 'package:profile_app/data/sastodeal_menu_list.dart';
+
+import '../../constants/constants.dart';
+import '../../data/sastodeal_menu_list.dart';
 
 class GridViewMenu extends StatelessWidget {
   const GridViewMenu({Key? key}) : super(key: key);

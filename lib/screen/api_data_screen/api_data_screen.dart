@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/model/api_user.dart';
-import 'package:profile_app/services/api_service.dart';
+
+import '../../model/api_user.dart';
+import '../../services/api_service.dart';
 
 class ApiDataScreen extends StatefulWidget {
   const ApiDataScreen({Key? key}) : super(key: key);

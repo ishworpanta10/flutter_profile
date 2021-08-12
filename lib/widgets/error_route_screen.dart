@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/style/style.dart';
+
+import '../style/style.dart';
 
 class ErrorRouteScreen extends StatelessWidget {
   @override

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/assets/assets.dart';
-import 'package:profile_app/constants/constants.dart';
-import 'package:profile_app/model/model.dart';
-import 'package:profile_app/style/style.dart';
-import 'package:profile_app/widgets/widgets.dart';
 
+import '../../assets/assets.dart';
+import '../../constants/constants.dart';
+import '../../model/model.dart';
+import '../../style/style.dart';
+import '../../widgets/widgets.dart';
 import 'widgets_collection.dart';
 
 class HeaderSection extends StatelessWidget {
