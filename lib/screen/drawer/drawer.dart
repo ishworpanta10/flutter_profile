@@ -23,7 +23,7 @@ class MyDrawer extends StatelessWidget {
               accountEmail: Text(userModel.email),
             ),
             ListTile(
-              title: const Text("Daraz Nepal Website"),
+              title: const Text("Daraz Nepal Website (Web View)"),
               onTap: () {
                 Navigator.pushNamed(
                   context,
@@ -34,7 +34,7 @@ class MyDrawer extends StatelessWidget {
             ),
             const Divider(),
             ListTile(
-              title: const Text("Sastodeal Grid View Menu"),
+              title: const Text("Sastodeal Menu (Grid View)"),
               onTap: () {
                 Navigator.pushNamed(
                   context,
@@ -44,7 +44,12 @@ class MyDrawer extends StatelessWidget {
             ),
             const Divider(),
             ListTile(
-              title: const Text("App to fetch data from internet"),
+              title: const Text("Offline Courses"),
+              onTap: () {},
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text("Fetching data from internet (Simple App)"),
               onTap: () {
                 Navigator.pushNamed(
                   context,
@@ -52,6 +57,7 @@ class MyDrawer extends StatelessWidget {
                 );
               },
             ),
+            const Divider(),
           ],
         ),
       ),
