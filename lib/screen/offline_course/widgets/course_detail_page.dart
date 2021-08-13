@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app/constants/constants.dart';
 
 import '../../../model/model.dart';
 import '../../../route/routes.dart';
@@ -13,7 +14,11 @@ class CourseDetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("${offlineCourse.courseName} Course Content"),
       ),
-      body: ListView.builder(
+      body: ListView.separated(
+        separatorBuilder: (context, index) => const Padding(
+          padding: EdgeInsets.symmetric(horizontal: kPadding * 2),
+          child: Divider(),
+        ),
         itemCount: offlineCourse.courseContent.courseContentTitle.length,
         itemBuilder: (context, index) {
           final courseContentHeading = offlineCourse.courseContent.courseContentTitle[index];
