@@ -32,6 +32,11 @@ class CustomRouter {
           builder: (context) => const ApiDataScreen(),
         );
 
+      case RouteConstants.offlineCoursePageRoute:
+        return MaterialPageRoute(
+          builder: (context) => const OfflineCourseScreen(),
+        );
+
       default:
         return MaterialPageRoute(
           builder: (context) => ErrorRouteScreen(),

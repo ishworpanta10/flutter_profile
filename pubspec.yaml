@@ -25,7 +25,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/icons/
+    - assets/icons/social_icons/
+    - assets/icons/offline_courses/
   #   - images/a_dot_ham.jpeg
 
   # fonts:

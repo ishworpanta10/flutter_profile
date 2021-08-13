@@ -29,4 +29,14 @@ class CustomTextStyle {
     color: CustomColor.whiteColor,
     fontSize: 14,
   );
+
+  static const TextStyle titleTextStyle = TextStyle(
+    color: CustomColor.blackColor,
+    fontSize: 18,
+  );
+
+  static const TextStyle subTitleTextStyle = TextStyle(
+    color: CustomColor.black54,
+    fontSize: 16,
+  );
 }

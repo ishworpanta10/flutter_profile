@@ -15,12 +15,3 @@ class UserModel {
   final String email;
   final int phone;
 }
-
-const currentUser = UserModel(
-  username: "ishworpanta10",
-  age: 24,
-  designation: 'Developer',
-  regNo: "454 - 6780 - 656",
-  email: "ishworpanta10@gmail.com",
-  phone: 9843750658,
-);

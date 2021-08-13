@@ -45,7 +45,9 @@ class MyDrawer extends StatelessWidget {
             const Divider(),
             ListTile(
               title: const Text("Offline Courses"),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, RouteConstants.offlineCoursePageRoute);
+              },
             ),
             const Divider(),
             ListTile(
