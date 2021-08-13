@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../model/model.dart';
 import '../screen/screens.dart';
 import '../widgets/widgets.dart';
 import 'routes.dart';
@@ -38,12 +39,19 @@ class CustomRouter {
         );
 
       case RouteConstants.offlinePdfViewRoute:
-        final pdfSourceAndInfo = routeSettings.arguments as List<String>;
-
+        final contentTitleAndPdfSource = routeSettings.arguments as List<String>;
         return MaterialPageRoute(
           builder: (context) => PdfViewPage(
-            pdfSource: pdfSourceAndInfo[0],
-            courseName: pdfSourceAndInfo[1],
+            headingName: contentTitleAndPdfSource[0],
+            pdfSource: contentTitleAndPdfSource[1],
+          ),
+        );
+
+      case RouteConstants.offlineCourseDetailRoute:
+        final offlineCourse = routeSettings.arguments as OfflineCourse;
+        return MaterialPageRoute(
+          builder: (context) => CourseDetailPage(
+            offlineCourse: offlineCourse,
           ),
         );
 

@@ -8,6 +8,18 @@ class AppAssets {
 
   //pdf
   final pdfHtml = '${_assetsPdfSourcePath}html_cheat_sheet.pdf';
+  final pdfHtmlMultimedia = '${_assetsPdfSourcePath}html_multimedia.pdf';
+  final pdfHtmlTagRef = '${_assetsPdfSourcePath}html_tag_ref.pdf';
+  final pdfCSSCheatSheet = '${_assetsPdfSourcePath}css_cheat.pdf';
+  final pdfCSSIntro = '${_assetsPdfSourcePath}css_intro.pdf';
+  final pdfCSSStyle = '${_assetsPdfSourcePath}css_styles.pdf';
+  final pdfJsExample = '${_assetsPdfSourcePath}js_example.pdf';
+  final pdfJsCheatSheet = '${_assetsPdfSourcePath}js_cheat.pdf';
+  final pdfPythonCheat = '${_assetsPdfSourcePath}python_cheat.pdf';
+  final pdfPythonLoop = '${_assetsPdfSourcePath}python_loops.pdf';
+  final pdfCpp = '${_assetsPdfSourcePath}cpp.pdf';
+  final pdfGit = '${_assetsPdfSourcePath}git.pdf';
+  final pdfJava = '${_assetsPdfSourcePath}java_tutorial.pdf';
 
   //images
   final userProfile = '${_assetsImagesPath}userProfile1.jpg';

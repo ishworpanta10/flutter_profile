@@ -32,8 +32,8 @@ class OfflineCourseScreen extends StatelessWidget {
       itemCount: offlineCourses.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
+        mainAxisSpacing: 16,
+        crossAxisSpacing: 16,
         // mainAxisExtent: 150,
       ),
       itemBuilder: (context, index) {

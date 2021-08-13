@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/route/routes.dart';
 
 import '../../../constants/constants.dart';
 import '../../../model/model.dart';
+import '../../../route/routes.dart';
 import '../../../style/style.dart';
 
 class SingleGridTile extends StatelessWidget {
@@ -17,11 +17,8 @@ class SingleGridTile extends StatelessWidget {
       onTap: () {
         Navigator.pushNamed(
           context,
-          RouteConstants.offlinePdfViewRoute,
-          arguments: [
-            offlineCourse.pdfSource,
-            offlineCourse.courseName,
-          ],
+          RouteConstants.offlineCourseDetailRoute,
+          arguments: offlineCourse,
         );
       },
       child: GridTile(
@@ -31,8 +28,8 @@ class SingleGridTile extends StatelessWidget {
             color: offlineCourse.color?.withOpacity(0.5) ?? Colors.grey[300],
           ),
           margin: EdgeInsets.only(
-            left: index.isOdd ? 0 : kPadding,
-            right: index.isEven ? 0 : kPadding,
+            left: index.isOdd ? 0 : kPadding + 6,
+            right: index.isEven ? 0 : kPadding + 6,
           ),
           child: Center(
             child: Column(
