@@ -16,6 +16,7 @@ dependencies:
   url_launcher: ^6.0.9
   flutter_inappwebview: ^5.3.2
   http: ^0.13.3
+  native_pdf_view: ^4.1.0
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +28,7 @@ flutter:
     - assets/images/
     - assets/icons/social_icons/
     - assets/icons/offline_courses/
+    - assets/pdf/
   #   - images/a_dot_ham.jpeg
 
   # fonts:

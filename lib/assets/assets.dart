@@ -4,6 +4,10 @@ class AppAssets {
   static const _assetsImagesPath = "assets/images/";
   static const _assetsSocialIconsPath = "assets/icons/social_icons/";
   static const _assetsOfflineCourseIconsPath = "assets/icons/offline_courses/";
+  static const _assetsPdfSourcePath = "assets/pdf/";
+
+  //pdf
+  final pdfHtml = '${_assetsPdfSourcePath}html_cheat_sheet.pdf';
 
   //images
   final userProfile = '${_assetsImagesPath}userProfile1.jpg';

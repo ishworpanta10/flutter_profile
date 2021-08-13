@@ -37,6 +37,16 @@ class CustomRouter {
           builder: (context) => const OfflineCourseScreen(),
         );
 
+      case RouteConstants.offlinePdfViewRoute:
+        final pdfSourceAndInfo = routeSettings.arguments as List<String>;
+
+        return MaterialPageRoute(
+          builder: (context) => PdfViewPage(
+            pdfSource: pdfSourceAndInfo[0],
+            courseName: pdfSourceAndInfo[1],
+          ),
+        );
+
       default:
         return MaterialPageRoute(
           builder: (context) => ErrorRouteScreen(),

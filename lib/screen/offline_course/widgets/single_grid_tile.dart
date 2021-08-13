@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app/route/routes.dart';
 
 import '../../../constants/constants.dart';
 import '../../../model/model.dart';
@@ -12,34 +13,46 @@ class SingleGridTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridTile(
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: offlineCourse.color?.withOpacity(0.5) ?? Colors.grey[300],
-        ),
-        margin: EdgeInsets.only(
-          left: index.isOdd ? 0 : kPadding,
-          right: index.isEven ? 0 : kPadding,
-        ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(offlineCourse.iconPath, height: 90),
-              const SizedBox(height: kPadding),
-              Text(
-                offlineCourse.courseName,
-                style: CustomTextStyle.boldBlackTextStyle,
-              ),
-              const SizedBox(height: kPadding),
-              Text(
-                offlineCourse.level,
-                style: CustomTextStyle.subTitleTextStyle.copyWith(
-                  color: Colors.white,
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(
+          context,
+          RouteConstants.offlinePdfViewRoute,
+          arguments: [
+            offlineCourse.pdfSource,
+            offlineCourse.courseName,
+          ],
+        );
+      },
+      child: GridTile(
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: offlineCourse.color?.withOpacity(0.5) ?? Colors.grey[300],
+          ),
+          margin: EdgeInsets.only(
+            left: index.isOdd ? 0 : kPadding,
+            right: index.isEven ? 0 : kPadding,
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(offlineCourse.iconPath, height: 90),
+                const SizedBox(height: kPadding),
+                Text(
+                  offlineCourse.courseName,
+                  style: CustomTextStyle.boldBlackTextStyle,
                 ),
-              ),
-            ],
+                const SizedBox(height: kPadding),
+                Text(
+                  offlineCourse.level,
+                  style: CustomTextStyle.subTitleTextStyle.copyWith(
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
